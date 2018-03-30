@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myclass.vn -Bài tập 1 - Website công ty </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+    window.onscroll = function() {
+      myFunction();
+    };
+    function myFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        var navbar = document.getElementById("navbar1");
+        navbar.style.backgroundColor = "#fff";
+        navbar.style.transition = "box-shadow 0.1s";
+        navbar.style.boxShadow = "5px 0px 40px rgba(0,0,0, 0.5)";
+        navbar.classList.add("navbar-default");
+      } else {
+        var navbar = document.getElementById("navbar1");
+        navbar.style.backgroundColor = "";
+        navbar.style.transition = "";
+        navbar.style.boxShadow = "";
+        navbar.classList.remove("navbar-default");
+      }
+    }
+  </script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="container-fluid text-center" id="header"> 
+    <nav class="navbar navbar-fixed-top" id="navbar1">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#myPage">Liên hệ:</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">HOME</a></li>
+            <li><a href="#services">GIỚI THIỆU</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">DANH SÁCH TOURS<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-column columns-3">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <ul class="multi-column-dropdown">
+                          <h6>DU LỊCH MIỀN BẮC</h6>
+                          <li><a href="products.html">Du lịch Hà Nội</a></li>
+                          <li><a href="products.html">Du lịch Hạ Long</a></li>
+                          <li><a href="products.html">Du lịch Sapa</a></li>
+                          <li><a href="products.html">Du lịch Ninh Bình</a></li>
+                          <li><a href="products.html">Du lịch Hải Phòng</a></li>
+                          <li><a href="products.html">Du lịch Sơn La</a></li>
+                          <li><a href="products.html">Du lịch Hòa Bình</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <ul class="multi-column-dropdown">
+                          <h6>DU LỊCH MIỀN TRUNG</h6>
+                          <li><a href="products.html">Du lịch Đà Nẵng</a></li>
+                          <li><a href="products.html">Du lịch Huế</a></li>
+                          <li><a href="products.html">Du lịch Hội An</a></li>
+                          <li><a href="products.html">Du lịch Quảng Bình</a></li>
+                          <li><a href="products.html">Du lịch Nha Trang</a></li>
+                          <li><a href="products.html">Du lịch Đà Lạt</a></li>
+                          <li><a href="products.html">Du lịch Quảng Nam</a></li>
+                          <li><a href="products.html">Du lịch Tây Nguyên</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <ul class="multi-column-dropdown">
+                          <h6>DU LỊCH MIỀN NAM</h6>
+                          <li><a href="products.html">Du lịch Phú Quốc</a></li>
+                          <li><a href="products.html">Du lịch Miền Tây</a></li>
+                          <li><a href="products.html">Du lịch Côn Đảo</a></li>
+                          <li><a href="products.html">Du lịch Hồ Chí Minh</a></li>
+                          <li><a href="products.html">Du lịch Cà Mau</a></li>
+                          <li><a href="products.html">Du lịch Cần Thơ</a></li>
+                          <li><a href="products.html">Du lịch Vũng Tàu</a></li>
+                          <li><a href="products.html">Du lịch Đồng Tháp</a></li>
+                        </ul>
+                      </div>
+                <div class="clearfix"></div>
+                    </div>
+                  </ul>
+            </li>
+            <li><a href="#pricing">TIN TỨC DU LỊCH</a></li>
+            <li><a href="#pricing">KHÁCH SẠN</a></li>
+            <li><a href="#contact">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid text-center"> 
+    	<h1><img src = "img/Logo4.png"></h1>
+      <h2>Chất lượng - Uy tín - Tận tâm</h2> 
+    </div>
+  </div>
+  <div class="container text-center ">
+        <div class="row slideanim " id="about">
+          <h1>Giới thiệu chung</h1>
+          <hr/>
+            <p>VietTravel là một trong những đơn vị cung cấp tour du lịch hàng đầu Vịnh Bắc Bộ với các tour du lịch Chất - Rẻ - 
+            Uy tín. Chúng tôi đang hứa hẹn trở thành đơn vị cung cấp các tour du lịch tầm vũ cmn trụ. Hãy đến với VietTravel để tận hưởng những giây phút tuyệt vời bên gia đình và người thân tại những thiên đường du lịch hàng đầu. Còn chần chờ gì nữa mà không book ngay cho mình một tour :))) </p>
+        </div>
+        <div class="row bg-grey">
+          <h1>Tour nổi bật</h1>
+          <h3>Tận hưởng bản sắc dân tộc</h3>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <a href="">
+                <div class="zoomin">
+                  <img src="tour_img/1.jpg" alt="Paris" width="400" height="300">
+                </div>
+              </a>
+              <a href=""><p><strong>Du lịch Hà Nội 2 ngày 1 đêm</strong></p></a>
+              <p>Giá: 2000.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <a href="">
+                <div class="zoomin">
+                  <img src="tour_img/2.jpg" alt="Paris" width="400" height="300">
+                </div>
+              </a>
+              <a href=""><p><strong>Du lịch SaPa 4 ngày 3 đêm</strong></p></a>
+              <p>Giá: 2000.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <a href="">
+                <div class="zoomin">
+                  <img src="tour_img/4.jpg" alt="Paris" width="400" height="300">
+                </div>
+              </a>
+              <a href=""><p><strong>Du lịch Đà Nẵng 3 ngày 2 đêm</strong></p></a>
+              <p>Giá: 2000.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <a href="">
+                <div class="zoomin">
+                  <img src="tour_img/5.jpg" alt="Paris" width="400" height="300">
+                </div>
+              </a>
+              <a href=""><p><strong>Du lịch Đà Nẵng 3 ngày 2 đêm</strong></p></a>
+              <p>Giá: 2000.000 VNĐ</p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="tour_event">
+          <div class="col-sm-12">
+              <span>TẬN HƯỞNG BẢN SẮC VIỆT </span>
+              <h2>DU LỊCH LỄ 30/4 &amp; 1/5</h2>
+              <p>Đa dạng tour đường bay, đường bộ với giá hấp dẫn!</p>
+              <a href="">Xem thêm</a>
+          </div>
+        </div>
+        <div class="row bg-grey">
+            <h1>Tin tức du lịch mới nhất</h1>
+            <div class="col-sm-4">
+              <div class="thumbnail news">
+                <a href=""><img src="news_img/3.png" alt="Paris" width="400" height="300"></a>
+                <a href=""><p><strong>Về Đồ Sơn xem trọi trâu</strong></p></a>
+                <p>Giá: 2000.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail news">
+                <a href=""><img src="news_img/6.jpg" alt="Paris" width="400" height="300"></a>
+                <a href=""><p><strong>Đi Bắc Ninh xem Hội Lim</strong></p></a>
+                <p>Giá: 2000.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail news">
+                <a href=""><img src="news_img/7.png" alt="Paris" width="400" height="300"></a>
+                <a href=""><p><strong>Thật không thể tin được</strong></p></a>
+                <p>Giá: 2000.000 VNĐ</p>
+              </div>
+            </div>
+        </div>
+        <div class="row bg-grey">
+            <div class="col-sm-6">
+              <div class="thumbnail news">
+                <a href=""><img src="news_img/8.png" alt="Paris" width="400" height="300"></a>
+                <a href=""><p><strong>Lễ hội hoa Hạ long</strong></p></a>
+                <p>Giá: 2000.000 VNĐ</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="thumbnail news">
+                <a href=""><img src="news_img/13.png" alt="Paris" width="400" height="300"></a>
+                <a href=""><p><strong>Lễ hội pháo hoa Đà Nẵng</strong></p></a>
+                <p>Giá: 2000.000 VNĐ</p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a href="">Tour trong nước</a></li>
+            <li><a href="">a</a></li>
+            <li><a href="">a</a></li>
+            <li><a href="">a</a></li>
+            <li><a href="">a</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+            <h4>Thông tin</h4>
+            <ul>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <h4>Liên hệ</h4>
+            <ul>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+              <li><a href="">a</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <h4>Đăng ký nhận thông tin</h4>
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="Enter your name" /><br/>
+              <input type="email" name="email" placeholder="Enter your email"/>
+            </form>
+        </div>
+      </div>
+      <div class="right">
+        <p>Bản quyền 2006 - 2018 © Công ty TNHH Lữ hành VietTravel. Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội.<p>
+        <p>ĐT: 0123456789 - Fax: 987654321.</p> 
+        <p>TƯ VẤN & ĐẶT DỊCH VỤ: 1900 1808</p>
+        <p>Website VietTravel.com đã được đăng ký với Bộ Công Thương</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
