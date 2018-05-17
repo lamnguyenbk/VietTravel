@@ -1,0 +1,35 @@
+
+<div class="col-sm-4 col-xs-12">
+	<form id="searchForm" method="POST" role="form" action="index.php?controllers=Tour&action=SearchTour">
+		<div class="panel panel-default ">
+			<div class="panel-heading">
+				<h3 class="text-center">Tìm kiếm</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12">
+						<div>
+							<input type="text" class="form-control search " name="diemden"
+								placeholder="Điểm đến, tour,..."> 
+							</br> 
+							<!-- <input type="date" class="form-control search " name="date" placeholder="MM/DD/YYYY"> 
+							</br> -->
+							<label>Giá</label>
+							</br>
+							<input type="checkbox" name="price" value="1">&nbsp Nhỏ hơn 2.000.000 VND <br/>
+							<input type="checkbox" name="price" value="2">&nbsp 2.000.000 - 5.000.000 VND <br/>
+							<input type="checkbox" name="price" value="3">&nbsp Lớn hơn 5.000.000 VND 
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<br/>
+						<button type="submit" class="btn btn-block" name="submit">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+

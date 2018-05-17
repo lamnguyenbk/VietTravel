@@ -1,0 +1,66 @@
+
+<div class="col-sm-9 col-xs-12">
+	<form id="searchForm" method="POST" role="form" action="index.php?controllers=Tour&action=BookTour&id=<?php echo($tour->id) ?>">
+		<div class="panel panel-default ">
+			<div class="panel-heading">
+				<h3 class="text-center">THÔNG TIN ĐẶT TOUR</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12">
+						<div>
+							<h3>SỐ LƯỢNG HÀNH KHÁCH</h3>
+							<label>Người lớn</label>
+							<input type="number" class="form-control search " name="adult"> 
+							</br> 
+							<label>Trẻ em</label>
+							<ul>
+								<li>Dưới 12 tuổi</li>
+							</ul>
+							<input type="number" class="form-control search " name="child" required>	
+							</br> 
+							<label>Phương thức thanh toán</label>
+							<select class="search" name="pay">
+								<option value="1">Thanh toán tại chi nhánh của công ty</option>
+								<option value="2">Thanh toán qua ngân hàng</option>
+								<option value="3">Thanh toán bằng thẻ tín dụng</option>
+							</select> 
+							</br> 
+							</br>
+							<label>Tôi đã đọc kỹ điều khoản</label>
+							<input type="checkbox">
+						</div>
+						<div>
+						<p>
+							Điều khoản này là sự thoả thuận đồng ý của quý khách khi sử dụng dịch vụ thanh toán trên trang web
+						 	của Công ty Dịch vụ Lữ hành Viettravel và những trang web của bên thứ ba. Việc 
+						 	quý khách đánh dấu vào ô “Đồng ý” và nhấp chuột vào thanh “Chấp nhận” nghĩa là quý khách đồng ý tất 
+						 	cả các điều khoản thỏa thuận trong các trang web này.
+						</p>
+						<b>Về thông tin khách hàng.</b>
+						<p>Khi đăng ký thanh toán qua mạng, quý khách sẽ được yêu cầu cung cấp một số thông tin cá nhân và thông tin tài khoản.
+						 	Đối với thông tin cá nhân: Những thông tin này chỉ để phục vụ cho nhu cầu xác nhận sự mua dịch vụ của quý khách và 
+						 	sẽ hiển thị những nội dung cần thiết trên vé điện tử. Chúng tôi cũng sẽ sử dụng những thông tin liên lạc này để 
+						 	gửi đến quý khách những sự kiện.
+						</p>
+						<b>Về hủy tour</b>
+						<p>Trong trường hợp hủy tour, quý khách vui lòng gửi email thông báo hủy tour đến Viettravel. Viettravel sẽ trao đổi 
+							và xác nhận lại tất cả các thông tin của quý khách. Khi hoàn tất việc xác nhận thông tin, Viettravel sẽ hoàn tiền vào đúng 
+							tài khoản quý khách đã thanh toán sau khi trừ các khoản lệ phí hủy tour. Lệ phí hủy tour sẽ tùy thuộc vào từng tour tuyến quý
+						 	khách đăng ký.
+						 </p>
+
+
+						</div>
+					</div>
+					<div class="col-xs-12 text-center">
+						<button type="submit" class="btn" name="submit">Đồng ý</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+

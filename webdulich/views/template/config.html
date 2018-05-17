@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/jquery.min.js"></script>
+  
+  <link href="views/template/style1.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+    window.onscroll = function() {
+      myFunction();
+    };
+    function myFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        var navbar = document.getElementById("navbar1");
+        navbar.style.backgroundColor = "#fff";
+        navbar.style.transition = "box-shadow 0.1s";
+        navbar.style.boxShadow = "5px 0px 40px rgba(0,0,0, 0.5)";
+        navbar.classList.add("navbar-default");
+      } else {
+        var navbar = document.getElementById("navbar1");
+        navbar.style.backgroundColor = "";
+        navbar.style.transition = "";
+        navbar.style.boxShadow = "";
+        navbar.classList.remove("navbar-default");
+      }
+    }
+
+  </script>
+</head>
